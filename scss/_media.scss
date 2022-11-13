@@ -1,0 +1,763 @@
+@media (max-width:1200px) {
+   .medical {
+      min-height: 650px;
+
+      &_content {
+         padding: 156px 0px 0px 0px;
+      }
+   }
+
+   .services {
+      min-height: 977px;
+      /* background: #F7F8FC; */
+      background: #ccd5fa;
+      padding: 0px 0px 40px 0px;
+
+
+      .wrapper {
+         width: 100%;
+         flex-direction: column;
+
+         .content {
+            display: block;
+            max-width: 547px;
+            margin-top: 50px;
+
+         }
+
+         .items {
+            width: 650px;
+            margin: 0px auto;
+            justify-content: center;
+            margin-top: 50px;
+
+
+
+            /*  display: flex;
+            justify-content: center;
+            flex-wrap: wrap; */
+            &_h3 {
+               font-size: 45px;
+               line-height: 55px;
+            }
+         }
+      }
+   }
+
+   .provide {
+      .content {
+         padding: 0px 0px 0px 20px;
+
+
+         &_h6 {
+            margin-top: 138px;
+         }
+      }
+   }
+
+   .works {
+      h3 {
+         margin-top: 0;
+      }
+   }
+
+}
+
+@media (max-width:992px) {
+   .header {
+      min-height: 158px;
+      padding: 40px 0px 0px 0px;
+
+      &_up {
+         flex-direction: column;
+         justify-content: space-between;
+
+         .contact {
+            margin-top: 30px;
+         }
+      }
+
+      &_down {
+         .menu {
+            flex: 0 1 100%;
+            padding: 0px 10px;
+
+         }
+
+         .social {
+            display: none;
+
+         }
+      }
+   }
+
+   .medical {
+      min-height: 550px;
+
+      &_content {
+         padding: 150px 0px 0px 0px;
+      }
+   }
+
+   .provide {
+      &_wrapper {
+         flex-direction: column;
+
+         .picture {
+            width: 100%;
+
+            &_shadow {
+               margin: 0px auto;
+               margin-top: 80px;
+            }
+         }
+
+         .content {
+            width: 100%;
+
+            &_h6 {
+               margin-top: 60px;
+            }
+
+            &_btn {
+               margin: 0px auto;
+
+            }
+         }
+      }
+   }
+
+   .works {
+      &_wrapper {
+         flex-direction: column-reverse;
+         padding-top: 80px;
+
+         .visual {
+            display: flex;
+            justify-content: center;
+
+            img {
+               margin: 0px auto;
+            }
+         }
+
+         .content {
+            max-width: 600px;
+            padding: 0px 0px 0px 20px;
+
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            h3 {
+               font-size: 40px;
+            }
+
+            &_items {
+               .item {
+                  padding-left: 20px;
+               }
+            }
+
+         }
+
+      }
+   }
+
+   .appointment {
+      &_wrapper {
+         flex-direction: column;
+
+         .visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            &_img {
+
+               margin-top: 109px;
+            }
+
+            &_items {
+               top: 695px;
+            }
+         }
+
+         .content {
+            &_block {
+               max-width: 500px;
+               margin-top: 140px;
+               padding: 5px 0px 0px 43px;
+            }
+
+            &_btn {
+               margin: 28px 0px;
+            }
+         }
+      }
+   }
+
+   .team {
+      min-height: 750px;
+   }
+
+   .footer {
+      min-height: 400px;
+
+      .medicate,
+      .main {
+         margin-top: 80px;
+      }
+   }
+}
+
+@media (max-width:767px) {
+   .header {
+      padding: 15px 0px 0px 0px;
+
+      .contact {
+         flex-wrap: wrap;
+         margin-top: 10px;
+         font-size: 13px;
+
+         .mail,
+         .phone {
+            flex: 0 1 50%;
+            display: flex;
+            justify-content: center;
+         }
+
+         .btn {
+            flex: 1 1 100%;
+            max-width: 200px;
+            margin: 0px auto 0px auto;
+            margin-top: 20px;
+         }
+      }
+
+      &_down {
+
+         .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            transform: translateX(-100%);
+            padding: 20px 15px;
+            background-color: rgba(0, 0, 0, 0.7);
+            transition: 0.6s all;
+
+            ul {
+               flex-direction: column;
+               align-items: center;
+
+            }
+
+            a,
+            li {
+               font-size: 30px;
+               font-weight: 700;
+               line-height: 60px;
+               color: #ffffff;
+            }
+
+            &_active {
+               transform: translateX(0);
+            }
+
+            &_item {
+               padding-right: 0;
+               border: none;
+               margin: 5px 0;
+            }
+
+            &_link {
+               font-size: 20px;
+            }
+         }
+
+         .hamburger {
+            display: block;
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 21px;
+
+            span {
+               display: block;
+               height: 2px;
+               width: 100%;
+               background-color: #000;
+               margin: 5px 0;
+               transition: 0.5s all;
+            }
+
+            &_active {
+               span {
+                  margin-bottom: -7px;
+
+                  &:nth-child(1) {
+                     transform: translateY(4px) rotate(-45deg);
+                  }
+
+                  &:nth-child(2) {
+                     display: none;
+                  }
+
+                  &:nth-child(3) {
+                     transform: translateY(4px) rotate(45deg);
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .medical {
+      min-height: 420px;
+
+      &_content {
+         max-width: 400px;
+         padding: 50px 0px 0px 0px;
+
+         h1 {
+            font-size: 40px;
+            line-height: 50px;
+         }
+      }
+   }
+
+   .services {
+      .wrapper {
+         .content {
+            h3 {
+               font-size: 30px;
+               line-height: 40px;
+            }
+         }
+
+         .items {
+            max-width: 300px;
+            flex-direction: column;
+
+            ._move {
+               transform: unset
+            }
+         }
+      }
+   }
+
+   .provide {
+      padding: 0px 20px;
+
+      .content {
+
+
+         &_items {
+            display: flex;
+            flex-wrap: wrap;
+
+            .item {
+               flex-direction: column;
+
+               &_icon img {
+                  margin: 40px 0px 0px 10px;
+
+               }
+
+               &_descr {
+                  h4 {
+                     margin: 10px auto 0 auto;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .appointment {
+      &_wrapper {
+         .visual {
+
+            &_img {
+               /*  width: 500px;
+               height: 540px; */
+               margin: 0px auto;
+
+               margin-top: 80px;
+            }
+
+            &_items {
+               display: none;
+
+            }
+         }
+
+         .content {
+            &_block {
+               max-width: 500px;
+               margin-top: 60px;
+               padding: 5px 0px 0px 43px;
+
+               h3 {
+                  font-size: 45px;
+                  line-height: 60px;
+                  margin: 25px 0px;
+
+               }
+            }
+         }
+      }
+   }
+
+   .team {
+      .title {
+         margin-top: 40px;
+
+         h3 {
+            font-size: 32px;
+         }
+      }
+
+      .image-slider {
+         .image-slider__wrapper {
+            .image-slider__slide {
+
+               .image-slider__info {
+                  h6 {
+                     font-size: 14px;
+                     line-height: 18px;
+
+                     margin-top: 24px;
+                     margin-bottom: 8px;
+                  }
+
+                  p {
+                     font-size: 11px;
+                     line-height: 13px;
+                  }
+               }
+            }
+         }
+
+         .swiper-button-next,
+         .swiper-button-prev {
+            top: 300px;
+         }
+      }
+   }
+
+   .footer {
+      &_wrapper {
+         flex-direction: column;
+
+         .medicate {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+
+            p {
+               margin: 25px 0px 0px 0px;
+               text-align: center;
+            }
+
+            &_social {
+               max-width: 400px;
+               margin-top: 25px;
+
+               a {
+                  display: block;
+                  padding: 0px 10px;
+               }
+            }
+         }
+
+         .main {
+            margin-top: 50px;
+         }
+      }
+   }
+}
+
+@media (max-width:576px) {
+
+   .header {
+      &_up {
+         .contact {
+            gap: 10px;
+
+            &_mail {
+               flex: 0 1 50%;
+            }
+
+            &_phone {
+               flex: 0 1 50%;
+            }
+
+            &_btn {
+               flex: 0 1 100%;
+               margin: 0 auto;
+               margin-top: 20px;
+            }
+         }
+      }
+   }
+
+   .medical {
+      min-height: 420px;
+
+      &_decor {
+         display: none;
+      }
+
+      &_content {
+         max-width: 400px;
+         padding: 50px 0px 0px 0px;
+
+         h1 {
+            font-size: 40px;
+            line-height: 50px;
+         }
+      }
+   }
+
+   .provide {
+      padding: 0px 5px;
+
+      .picture {
+         &_shadow {
+            width: 250px;
+            height: 305px;
+            border-radius: 10px;
+            transform: translateX(5%);
+
+            .big {
+               position: absolute;
+               width: 250px;
+               top: -18px;
+               left: -15px;
+               z-index: 4;
+            }
+
+            .little {
+               position: absolute;
+               width: 150px;
+               top: 180px;
+               left: -15px;
+               z-index: 5;
+            }
+         }
+      }
+
+      .content {
+         padding: 0;
+      }
+   }
+
+   .appointment {
+      min-height: 800px;
+
+      &_wrapper {
+         .visual {
+
+            &_img {
+               /* width: 400px;
+               height: 430px; */
+               margin: 0px auto;
+
+               margin-top: 60px;
+            }
+         }
+      }
+   }
+
+   .team {
+      .title {
+         margin-top: 30px;
+
+         h3 {
+            font-size: 26px;
+         }
+
+         p {
+            font-size: 12px;
+         }
+      }
+   }
+
+   .testimonials {
+      &_title {
+         padding-top: 40px;
+
+         p {
+            font-size: 14px;
+            line-height: 16px;
+         }
+
+         h4 {
+            font-size: 18px;
+            line-height: 30px;
+            margin: 30px 0px;
+
+         }
+      }
+
+      &_items {
+         flex-direction: column;
+         align-items: center;
+
+         .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            padding: 0 15px;
+            margin-top: 20px;
+
+            p {
+               margin: 15px 0px 0px 0px;
+            }
+
+            h6 {
+               margin: 15px 0px 10px 0px;
+               font-size: 16px;
+            }
+         }
+      }
+   }
+}
+
+@media (max-width:425px) {
+   .header {
+      padding: 15px 0px 0px 0px;
+
+      &_up {
+         .contact {
+
+            &_mail,
+            &_phone {
+               flex: 0 1 100%;
+               margin: 10px 10px;
+            }
+
+            .btn {
+               flex: 1 1 100%;
+               max-width: 200px;
+               margin: 0px auto 0px auto;
+               margin-top: 20px;
+            }
+         }
+      }
+   }
+
+   .medical {
+      min-height: 500px;
+
+      &_content {
+         max-width: 300px;
+         padding: 70px 0px 0px 0px;
+
+         h1 {
+
+            font-size: 30px;
+            line-height: 40px;
+         }
+      }
+   }
+
+   .works {
+      .content {
+         max-width: 600px;
+         padding: 0px 20px;
+
+         margin-top: 50px;
+
+         h3 {
+            font-size: 30px;
+         }
+
+         h5 {
+            font-size: 18px;
+         }
+
+         &_items {
+            .item {
+               padding-left: 20px;
+            }
+         }
+      }
+   }
+
+   .appointment {
+      min-height: 700px;
+
+      &_wrapper {
+         .visual {
+
+            &_img {
+               /*   width: 300px;
+               height: 320px; */
+               margin: 0px auto;
+
+               margin-top: 40px;
+            }
+         }
+
+         .content {
+            &_block {
+
+               margin-top: 50px;
+               padding: 5px 20px;
+
+               h3 {
+                  font-size: 30px;
+                  line-height: 40px;
+                  margin: 25px 0px;
+
+               }
+            }
+
+            &_btn {
+               margin: 0px auto;
+               margin-bottom: 28px;
+
+
+            }
+         }
+      }
+   }
+
+   .team {
+      .title {
+         margin-top: 40px;
+
+         h3 {
+            font-size: 24px;
+            line-height: 40px;
+         }
+      }
+   }
+
+   .footer {
+      &_wrapper {
+         .medicate {}
+
+         .main {
+            flex-wrap: wrap;
+
+            &_links,
+            &_about,
+            &_resources,
+            &_office {
+               flex: 0 1 40%;
+               padding: 0px 0px 20px 20px;
+
+
+            }
+         }
+      }
+   }
+}
